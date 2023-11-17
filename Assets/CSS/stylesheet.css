@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    --main-color: #41101d;
-    --background: #d1d1d1;
+    --main-color: #114769;
+    --background: #e7e7e7;
 }
 
 * {
@@ -57,4 +57,17 @@ a {
     border-top: 3px solid white;/* or bottom */
     width: 30em;
     margin: 10 0;
+}
+
+.hero {
+    height: 200px;
+    width: 100%;
+    background-image: url("https://images4.alphacoders.com/130/1301526.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    max-height: 100%; /* Ensures the image doesn't exceed the container height */
 }
