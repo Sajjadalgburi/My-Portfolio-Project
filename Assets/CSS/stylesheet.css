@@ -30,6 +30,7 @@ body {
 }
 
 .header-main nav {
+    display: flex;
     padding-top: 15px;
     float: right;
     margin-right: 10px;
@@ -65,15 +66,22 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    nav {
-        display: flex;
         flex-direction: column;
-    }
-  }
 
-/* 
+    }
+
+}
+
+/* Large smartphones - */
+@media screen and (max-width: 768px) {
+    
+}
+  
+/* Small smartphones - */
+@media screen and (max-width: 475px) {
+    
+}
+  
 .hero {
     position: absolute;
     height: 200px;
@@ -98,6 +106,6 @@ h2 {
     text-transform: uppercase;
     font-family: monospace;
     padding: 15px;
-    margin-top: 8%;
+    margin-top: 110px;
     font-weight: bold;
-} */
+}
