@@ -33,7 +33,6 @@ body {
     padding-top: 15px;
     float: right;
     margin-right: 10px;
-    margin-left: 20px;
     font-size: 18px;
 }
 
@@ -51,14 +50,30 @@ a {
     text-decoration: none;
 }
 
+/* 
 #header-line {
     position: absolute;
     border:none;
     border-top: 3px solid white;
     width: 30em;
     margin: 10 0;
-}
+} */
 
+/* Tablets - main header aligns in center */
+@media screen and (max-width: 992px) {
+    .header-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+/* 
 .hero {
     position: absolute;
     height: 200px;
@@ -85,4 +100,4 @@ h2 {
     padding: 15px;
     margin-top: 8%;
     font-weight: bold;
-}
+} */
