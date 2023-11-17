@@ -38,7 +38,6 @@ body {
 }
 
 .header-main nav ul li {
-    margin-left: 15px;
     display: inline-block;
 }
 
@@ -46,10 +45,20 @@ body {
     list-style-type: none;
 }
 
+.header-main nav a {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    background-color: red;
+}
+
+/* 
 a {
     color: white;
     text-decoration: none;
-}
+} 
+*/
 
 /* 
 #header-line {
@@ -88,9 +97,6 @@ a {
     margin-top: 110px;
     font-weight: bold;
 }
-
-
-
 
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
