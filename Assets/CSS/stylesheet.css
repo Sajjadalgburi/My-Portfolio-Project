@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 :root {
-    --main-color: #114769;
-    --background: #e7e7e7;
+    --main-color: #132467;
+    --background: #d1c2b7;
 }
 
 * {
@@ -60,6 +60,7 @@ a {
 }
 
 .hero {
+    position: absolute;
     height: 200px;
     width: 100%;
     background-image: url("https://images4.alphacoders.com/130/1301526.png");
@@ -71,3 +72,33 @@ a {
     max-width: 100%; /* Ensures the image doesn't exceed the container width */
     max-height: 100%; /* Ensures the image doesn't exceed the container height */
 }
+
+/* 
+.hero h2 {
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10%;
+    padding-top: 130px;
+    font-size: 150%;
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: chartreuse;
+} */
+
+h2 {
+    position: relative;
+    font-size: 180%;
+    background-color: white;
+    float: right;
+    margin-right: 10%;
+    color: #393a51;
+    text-transform: uppercase;
+    font-family: monospace;
+    padding: 15px;
+    margin-top: 8%;
+    font-weight: bold;
+}
+
