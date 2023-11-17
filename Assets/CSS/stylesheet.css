@@ -2,6 +2,7 @@
 
 :root {
     --main-color: #41101d;
+    --background: #d1d1d1;
 }
 
 * {
@@ -11,7 +12,7 @@
 }
 
 body {
-    background-color: #d1d1d1;
+    background-color: var(--background);
 }
 
 .header-main {
@@ -23,14 +24,17 @@ body {
 .header-main h1 {
     color: white;
     display: inline-block;
-    font-size: 48px;
+    font-size: 300%;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .header-main nav {
     padding-top: 15px;
     float: right;
     margin-right: 10px;
-    font-size: 15px;
+    margin-left: 20px;
+    font-size: 18px;
 }
 
 .header-main nav ul li {
@@ -47,3 +51,10 @@ a {
     text-decoration: none;
 }
 
+#header-line {
+    position: absolute;
+    border:none;
+    border-top: 3px solid white;/* or bottom */
+    width: 30em;
+    margin: 10 0;
+}
