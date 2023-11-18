@@ -111,32 +111,54 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.about-me-sidebar h2 {
+h2 {
     text-transform: uppercase;
     font-size: 250%;
 }
+
 .about-me-sidebar {
-    flex: 1;
+    display: block;
     color: white;
     padding: 80px;
     text-align: center;
 }
 
+#line-break {
+    color: var(--main-color);
+    background-color: var(--main-color);
+    margin-top: 10px;
+    width: 5px;
+}
+
 .content {
     display: flex;
-    background-color: var(--main-color);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     flex: 4;
-    padding: 20px; /* Adjust padding based on your design */
+    padding: 15px; /* Adjust padding based on your design */
 }
 
+.work-sidebar {
+    margin-left: 10%;
+    display: block;
+    color: white;
+    padding: 80px;
+    float: left;
+}
 
-
-
+.box-1 {
+    display: flex;
+    background-color: aquamarine;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border: 5px solid white;
+}
 
 
 /* Tablets - main header aligns in center */
