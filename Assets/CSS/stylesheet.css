@@ -80,22 +80,6 @@ body {
     opacity: 1;
 }
 
-/* 
-a {
-    color: white;
-    text-decoration: none;
-} 
-*/
-
-/* 
-#header-line {
-    position: absolute;
-    border:none;
-    border-top: 3px solid white;
-    width: 30em;
-    margin: 10 0;
-} */
-
 .hero {
     position: relative; /* Keep this position property */
     height: 200px;
@@ -129,19 +113,26 @@ main {
     flex-wrap: wrap;
 }
 
-footer {
-    background-color: #393a51;
+.about-me-sidebar h2 {
+    text-transform: uppercase;
+    font-size: 250%;
+}
+.about-me-sidebar {
+    flex: 1;
     color: white;
-    padding: 20px;
+    padding: 80px;
     text-align: center;
 }
 
-.about-me-sidebar {
-    background-color: #393a51;
-    color: white;
-    padding: 20px;
+.content {
+    display: flex;
+    background-color: var(--main-color);
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex: 4;
+    padding: 20px; /* Adjust padding based on your design */
 }
-
 
 
 
@@ -156,7 +147,15 @@ footer {
         align-items: center;
         flex-direction: column;
     }
+    .about-me-sidebar,
+    .content {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: left;
+    }
 }
+
 
 /* Large smartphones - */
 @media screen and (max-width: 768px) {
@@ -194,5 +193,10 @@ footer {
         margin: 20px 0;
         display: block;
     }
+    .about-me-sidebar,
+    .content {
+        padding: 10px;
+    }
 }
+
 
