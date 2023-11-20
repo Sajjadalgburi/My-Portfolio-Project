@@ -121,37 +121,49 @@ h2 {
     font-size: 250%;
 }
 
-.about-me {
+/* .about-me {
     position: relative;
     width: 250px;
     height: 250px;
     top: 35px;
     left: 35px;
     float: left;
+} */
+.about-me{
+    display: flex;
 }
-
 .line-break1 {
-    position: absolute;
+    /* position: absolute; */
     width: 5px;
     height: 350px;
     background-color: var(--main-color);
-    left: 250px;
-    top: 10px;
+    margin-left: 10px;
+    /* left: 250px;
+    top: 10px; */
 }
 
 p {
-    font-size: 20px;
-    line-height: 35px;
+    font-size: 15px;
+    line-height: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
+/*
 .parag {
-    position: relative;
+     position: relative;
     float: right;
-    top: -180px;
-    left: 320px;
+    width: 500px;
+    top: 50px;
+    left: 50px;
+} */
+.parag{
+    margin: 20px;
 }
 
+.about-section{
+    margin-top: 20px;
+    display: flex;
+}
 
 
 
