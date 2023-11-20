@@ -119,47 +119,6 @@ h2 {
     font-size: 250%;
 }
 
-.about-me-sidebar {
-    display: block;
-    color: white;
-    padding: 80px;
-    text-align: center;
-}
-
-#line-break {
-    color: var(--main-color);
-    background-color: var(--main-color);
-    margin-top: 10px;
-    width: 5px;
-}
-
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex: 4;
-    padding: 15px; /* Adjust padding based on your design */
-}
-
-.work-sidebar {
-    margin-left: 10%;
-    display: block;
-    color: white;
-    padding: 80px;
-    float: left;
-}
-
-.box-1 {
-    display: flex;
-    background-color: aquamarine;
-    height: 500px;
-    justify-content: center;
-    align-items: center;
-    font-size: 100px;
-    border: 5px solid white;
-}
-
 
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
