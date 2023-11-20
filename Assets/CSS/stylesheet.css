@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root {
     --main-color: #393a51;
@@ -115,9 +116,45 @@ main {
 }
 
 h2 {
+    color: white;
     text-transform: uppercase;
     font-size: 250%;
 }
+
+.about-me {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: 35px;
+    left: 35px;
+    float: left;
+}
+
+.line-break1 {
+    position: absolute;
+    width: 5px;
+    height: 350px;
+    background-color: var(--main-color);
+    left: 250px;
+    top: 10px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 35px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parag {
+    position: relative;
+    float: right;
+    top: -180px;
+    left: 320px;
+    
+}
+
+
+
 
 
 /* Tablets - main header aligns in center */
