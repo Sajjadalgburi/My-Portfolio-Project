@@ -222,16 +222,25 @@ p {
   margin-left: 27px;
 }
 
+.contact-links {
+  margin-left: 60px;
+  border: 2px solid rgb(255, 255, 255, .2);
+  background-color: transparent;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
 .contact-links ul {
   display: flex;
   align-items: center;
-  margin-left: 100px;
+  margin-left: 10px;
   text-align: center;
 }
 
 .contact-links ul li {
   display: inline-block;
-  margin-left: 50px;
+  margin-left: 34px;
+  margin-right: 40px;
 }
 
 .contact-links a {
@@ -242,6 +251,17 @@ p {
   transition: 0.5s;
   text-transform: uppercase;
 }
+/* 
+
+.contact-links::after:hover {
+  margin-left: 60px;
+  border: 2px solid rgb(255, 255, 255, .2);
+  background-color: aqua;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+ */
+
 
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
