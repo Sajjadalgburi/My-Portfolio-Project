@@ -121,26 +121,12 @@ h2 {
   font-size: 350%;
 }
 
-/* .about-me {
-    position: relative;
-    width: 250px;
-    height: 250px;
-    top: 35px;
-    left: 35px;
-    float: left;
-} */
-.about-me {
-  display: flex;
-}
 
 .line-break1 {
-  /* position: absolute; */
   width: 5px;
   height: 230px;
   background-color: var(--main-color);
-  margin-left: 10px;
-  /* left: 250px;
-    top: 10px; */
+  margin-left: 15px;
 }
 
 p {
@@ -149,14 +135,6 @@ p {
   font-family: "Open Sans", sans-serif;
 }
 
-/*
-.parag {
-     position: relative;
-    float: right;
-    width: 500px;
-    top: 50px;
-    left: 50px;
-} */
 .parag {
   margin: 20px;
 }
@@ -177,12 +155,16 @@ p {
 
 .line-break2 {
   width: 4px;
-  height: 1100px;
+  height: 950px;
   background-color: var(--main-color);
-  margin-left: 27px;
+  margin-left: 31px;
 }
 
-.work {
+
+.work,
+.about-me,
+.contact-me,
+.contact-links {
   display: flex;
 }
 
@@ -229,6 +211,41 @@ p {
   border: 5px solid var(--main-color);
   margin-left: 10px;
 }
+
+.contact-section {
+  display: flex;
+  margin: 50px 30px 50px 20px;
+}
+
+.line-break3 {
+  width: 4px;
+  height: 150px;
+  background-color: var(--main-color);
+  margin-left: 27px;
+}
+
+.contact-links ul {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+  text-align: center;
+}
+
+
+.contact-links ul li{
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.contact-links a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
 
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
