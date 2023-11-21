@@ -3,7 +3,7 @@
 
 :root {
   --main-color: #393a51;
-  --background: #d1c2b7;
+  --background: #dcdcdc;
 }
 
 * {
@@ -116,11 +116,10 @@ main {
 }
 
 h2 {
-  color: white;
+  color: var(--main-color);
   text-transform: capitalize;
   font-size: 350%;
 }
-
 
 .line-break1 {
   width: 5px;
@@ -159,7 +158,6 @@ p {
   background-color: var(--main-color);
   margin-left: 31px;
 }
-
 
 .work,
 .about-me,
@@ -231,8 +229,7 @@ p {
   text-align: center;
 }
 
-
-.contact-links ul li{
+.contact-links ul li {
   display: inline-block;
   margin-left: 50px;
 }
@@ -240,12 +237,11 @@ p {
 .contact-links a {
   font-size: 1.2em;
   text-decoration: none;
-  color: white;
+  color: var(--main-color);
   padding: 5px 20px;
   transition: 0.5s;
   text-transform: uppercase;
 }
-
 
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
