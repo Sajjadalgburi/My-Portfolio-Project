@@ -118,7 +118,7 @@ main {
 h2 {
   color: var(--main-color);
   text-transform: capitalize;
-  font-size: 350%;
+  font-size: 40px;
 }
 
 .line-break1 {
@@ -169,13 +169,17 @@ p {
 .images {
   display: flex;
   flex-direction: column;
-  margin-left: 60px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
 }
 
 .main-img {
   margin-left: 50px;
-  width: 1050px;
-  max-width: 100%;
+
+  /* width: 1050px;
+  max-width: 100%; */
+  width: 60%;
   height: 500px;
   max-height: 100%;
   overflow: hidden;
@@ -227,6 +231,7 @@ p {
 
 .contact-section {
   display: flex;
+  width: 100%;
   margin: 50px 30px 50px 20px;
 }
 
@@ -238,7 +243,8 @@ p {
 }
 
 .contact-links {
-  margin-left: 60px;
+  /* margin-left: 60px; */
+  margin: 0 auto;
   border: 2px solid rgb(255, 255, 255, 0.2);
   background-color: transparent;
   backdrop-filter: blur(10px);
@@ -248,14 +254,15 @@ p {
 .contact-links ul {
   display: flex;
   align-items: center;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   text-align: center;
 }
 
 .contact-links ul li {
-  display: inline-block;
-  margin-left: 34px;
-  margin-right: 40px;
+  /* display: inline-block; */
+  margin: 10px;
+  /* margin-left: 34px;
+  margin-right: 40px; */
 }
 
 .contact-links a {
@@ -276,7 +283,15 @@ p {
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
  */
-
+ @media screen and (max-width: 1000px) {
+  .contact-links a{
+    font-size: 15px;
+    padding: 0;
+  }
+  .line-break2{
+    height: 100%;
+  }
+ }
 /* Tablets - main header aligns in center */
 @media screen and (max-width: 992px) {
   .header-main {
