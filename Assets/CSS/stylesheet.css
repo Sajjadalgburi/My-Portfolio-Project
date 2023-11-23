@@ -102,6 +102,7 @@ body {
   font-weight: bold;
   left: 70%; /* Adjust this value based on your design */
   top: 5%; /* Adjust this value based on your design */
+  border-radius: 10px 100px / 120px;
 }
 
 .hero img {
@@ -118,7 +119,7 @@ main {
 h2 {
   color: var(--main-color);
   text-transform: capitalize;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .line-break1 {
@@ -126,6 +127,10 @@ h2 {
   height: 235px;
   background-color: var(--main-color);
   margin-left: 15px;
+}
+
+#about-me {
+  position: relative;
 }
 
 p {
@@ -146,7 +151,7 @@ p {
 }
 
 .myPhoto {
-  margin-right: 20px;
+  margin: 10px;
   display: flex;
   height: 200px;
   float: left;
@@ -186,8 +191,13 @@ p {
   height: 500px;
   max-height: 100%;
   overflow: hidden;
-  border: 5px solid var(--main-color);
   position: relative;
+  border-radius: 15% 15% / 0% 10%;
+}
+
+.main-img,
+.sub-img {
+  border: 6px solid var(--main-color);
 }
 
 .overlay-heading {
@@ -228,7 +238,6 @@ p {
 .sub-img {
   height: 200px;
   width: 500px;
-  border: 5px solid var(--main-color);
   margin-left: 10px;
 }
 
@@ -276,16 +285,26 @@ p {
   transition: 0.5s;
   text-transform: uppercase;
 }
-/* 
 
-.contact-links::after:hover {
-  margin-left: 60px;
-  border: 2px solid rgb(255, 255, 255, .2);
-  background-color: aqua;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+.main-img::before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: .3; /* Adjust the opacity value as needed */
+  z-index: 1;
+  transition: opacity 0.5s;
 }
- */
+
+.main-img:hover::before {
+  opacity: .1;
+}
+
+
  @media screen and (max-width: 1000px) {
   .contact-links a{
     font-size: 15px;
