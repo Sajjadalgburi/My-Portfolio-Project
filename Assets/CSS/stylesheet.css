@@ -1,21 +1,26 @@
+/* Font imports */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
 
+/* Root variables for color scheme */
 :root {
   --main-color: #393a51;
   --background: #dcdcdc;
 }
 
+/* Global styles for all elements */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
+/* Body styles */
 body {
   background-color: var(--background);
 }
 
+/* Header styles */
 .header-main {
   background-color: var(--main-color);
   padding: 30px;
@@ -81,8 +86,9 @@ body {
   opacity: 1;
 }
 
+/* Hero section styles */
 .hero {
-  position: relative; /* Keep this position property */
+  position: relative;
   height: 200px;
   width: 100%;
   background-image: url("https://images4.alphacoders.com/130/1301526.png");
@@ -105,11 +111,7 @@ body {
   border-radius: 10px 100px / 120px;
 }
 
-.hero img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
+/* Main content styles */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -122,6 +124,7 @@ h2 {
   font-size: 65px;
 }
 
+/* Line break styles */
 .line-break1 {
   width: 5px;
   height: 235px;
@@ -129,6 +132,7 @@ h2 {
   margin-left: 15px;
 }
 
+/* About Me section styles */
 #about-me {
   position: relative;
 }
@@ -157,6 +161,7 @@ p {
   float: left;
 }
 
+/* Work section styles */
 .works-section {
   display: flex;
   margin-left: 118px;
@@ -215,19 +220,19 @@ p {
 }
 
 .main-img img {
-  width: 100%; /* Ensure the image takes up 100% of its container */
-  height: auto; /* Maintain the aspect ratio of the image */
+  width: 100%;
+  height: auto;
 }
 
 .sub-img {
-  max-width: 100%; /* Allow the image to shrink if needed */
-  max-height: 100%; /* Allow the image to shrink if needed */
-  overflow: hidden; /* Hide overflowing content */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .sub-img img {
-  width: 100%; /* Ensure the image takes up 100% of its container */
-  height: auto; /* Maintain the aspect ratio of the image */
+  width: 100%;
+  height: auto;
 }
 
 .sub-section {
@@ -241,6 +246,7 @@ p {
   margin-left: 10px;
 }
 
+/* Contact Me section styles */
 .contact-section {
   display: flex;
   width: 100%;
@@ -255,7 +261,6 @@ p {
 }
 
 .contact-links {
-  /* margin-left: 60px; */
   margin: 0 auto;
   border: 2px solid rgb(255, 255, 255, 0.2);
   background-color: transparent;
@@ -266,15 +271,11 @@ p {
 .contact-links ul {
   display: flex;
   align-items: center;
-  /* margin-left: 10px; */
   text-align: center;
 }
 
 .contact-links ul li {
-  /* display: inline-block; */
   margin: 10px;
-  /* margin-left: 34px;
-  margin-right: 40px; */
 }
 
 .contact-links a {
@@ -286,6 +287,7 @@ p {
   text-transform: uppercase;
 }
 
+/* Hover effect on main image */
 .main-img::before {
   cursor: pointer;
   content: "";
@@ -295,7 +297,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.3; /* Adjust the opacity value as needed */
+  opacity: 0.3;
   z-index: 1;
   transition: opacity 0.5s;
 }
@@ -304,6 +306,7 @@ p {
   opacity: 0.1;
 }
 
+/* Media queries for responsive design */
 @media screen and (max-width: 1000px) {
   .contact-links a {
     font-size: 15px;
@@ -313,7 +316,7 @@ p {
     height: 100%;
   }
 }
-/* Tablets - main header aligns in center */
+
 @media screen and (max-width: 992px) {
   .header-main {
     display: flex;
@@ -330,50 +333,7 @@ p {
   }
 }
 
-/* Large smartphones - */
-@media screen and (max-width: 768px) {
-}
-
-/* Small smartphones - */
-@media screen and (max-width: 480px) {
-  .quote {
-    margin-top: 40px;
-    font-size: 90%;
-  }
-
-  .hero {
-    height: 100px;
-  }
-
-  .header-main {
-    text-align: center;
-    padding: 10px 30px;
-  }
-
-  .header-main h1 {
-    text-align: center;
-  }
-
-  .header-main nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  .header-main nav ul li {
-    margin: 20px 0;
-    display: block;
-  }
-  .about-me-sidebar,
-  .content {
-    padding: 10px;
-  }
-}
-
-/* ** RESPONSIVE DESIGN ** */
-
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .about-section,
   .works-section {
     display: block;
@@ -424,7 +384,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .contact-me,
   .contact-section {
     display: block;
@@ -442,7 +402,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 471px) {
+@media screen and (max-width: 471px) {
   .contact-links,
   .contact-links ul,
   .contact-links li {
