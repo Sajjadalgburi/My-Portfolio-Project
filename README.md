@@ -6,8 +6,9 @@ For this project, I had to create a portfolio from scratch! Yes, from scratch, w
 
 ## Screenshot UI
 
-![Screenshot of Web](assets/screenshots)
- 
+![Screenshot of Web](Assets/Screenshots/Screenshot%202023-11-23%20204246.png)
+![Screenshot of Web](Assets/Screenshots/Screenshot%202023-11-23%20204328.png)
+
 ## Installation
 
 Steps:
